@@ -1,0 +1,58 @@
+/* notificationStyles.css */
+
+/* Asegúrate de que el contenedor de la notificación sea relativo */
+.custom-notification .ant-notification-notice {
+  position: relative !important;
+  /* Asegura que el ícono absoluto se posicione correctamente dentro del contenedor */
+  padding-left: 48px !important;
+  /* Ajusta este padding según el tamaño del ícono y el diseño */
+  background-color: #333 !important;
+  /* Fondo gris oscuro */
+  color: #fff !important;
+  /* Texto blanco */
+}
+
+/* Estilo para el ícono personalizado */
+.custom-notification .ant-notification-notice-icon img {
+  position: absolute !important;
+  top: 16px !important;
+  /* Ajusta según el espacio superior deseado */
+  width: 24px !important;
+  /* Ajusta el tamaño del ícono */
+  height: 24px !important;
+  /* Ajusta el tamaño del ícono */
+}
+
+.custom-notification .ant-notification-close-icon {
+  color: #5e5e5e !important;
+  /* Color del ícono de cierre (X) */
+}
+
+/* Estilo para el mensaje y la descripción */
+.custom-notification .ant-notification-notice-message,
+.custom-notification .ant-notification-notice-description {
+  color: #fff !important;
+  /* Asegúrate de que el texto sea blanco */
+}
+
+/* Estilo específico para el título de error */
+.custom-notification.ant-notification-notice-error .ant-notification-notice-message {
+  color: #ffffff !important;
+  /* Color rojo para mensajes de error */
+  font-weight: bold !important;
+  /* Negrilla para mensajes de error */
+}
+
+/* Estilo específico para el título de éxito */
+.custom-notification.ant-notification-notice-success .ant-notification-notice-message {
+  color: #ffffff !important;
+  /* Color verde para mensajes de éxito */
+  font-weight: bold !important;
+  /* Negrilla para mensajes de éxito */
+}
+
+/* Estilo específico para el fondo de la notificación */
+.custom-notification .ant-notification-notice-message {
+  font-weight: bold;
+  /* Negrita */
+}

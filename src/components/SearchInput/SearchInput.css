@@ -1,0 +1,74 @@
+.search-wrapper {
+  background-color: #363636;
+  /* Fondo gris claro para el contenedor del input */
+  border-radius: 35px;
+  /* Bordes redondeados */
+  padding: 5px 10px;
+  /* Ajusta el padding para reducir el tamaño del contenedor */
+  display: flex;
+  align-items: center;
+  width: 65%;
+  /* Ajusta el ancho del contenedor según sea necesario */
+  margin-left: 170px;
+}
+
+.search-wrapper:hover {
+  background-color: #424242;
+  /* Gris un poco más claro para el hover */
+}
+
+.search-wrapper input::placeholder {
+  color: #ccc;
+  /* Color del placeholder (gris claro) */
+  opacity: 1;
+  /* Asegúrate de que la opacidad sea 1 para que sea completamente visible */
+}
+
+.search-wrapper input {
+  border: none;
+  /* Elimina el borde del input */
+  padding: 5px 10px;
+  /* Ajusta el padding para reducir el tamaño del input */
+  width: 100%;
+  /* Hace que el input ocupe todo el ancho del contenedor */
+  background: transparent;
+  /* Fondo transparente para el input */
+  font-size: 14px;
+  /* Tamaño de fuente más pequeño */
+  color: #fff;
+  /* Color del texto del input (blanco) */
+  cursor: pointer;
+  /* Cambia el cursor al pasar sobre el input */
+  line-height: 1.2;
+}
+
+.search-wrapper input:focus {
+  outline: none;
+  /* Elimina el borde en el foco */
+  box-shadow: none;
+  /* Elimina cualquier sombra en el foco */
+}
+
+.search-wrapper .search-icon {
+  margin-right: 8px;
+  /* Espacio entre el icono y el input */
+  font-size: 16px;
+  /* Tamaño del icono más pequeño */
+  color: #ffffff;
+  /* Color del icono */
+}
+
+.search-wrapper.focused {
+  border: 2px solid #006400; /* Borde verde cuando el input tiene el foco */
+}
+
+.search-icon {
+  margin-right: 8px;
+  color: #aaa;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+}

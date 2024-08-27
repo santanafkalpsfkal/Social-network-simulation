@@ -1,0 +1,41 @@
+.post-input-prompt {
+  display: flex;
+  align-items: center;
+  background-color: #1d1c1c;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 80px;
+}
+
+.post-input-prompt-div {
+  flex: 1;
+  background: #363636;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 35px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.post-input-prompt-div:hover {
+  background-color: #424242;
+}
+
+.post-input-prompt-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  height: 40px;
+  line-height: 1.5;
+  resize: none;
+}
+
+.post-input-prompt-input::placeholder {
+  color: #888888;
+  opacity: 1;
+}

@@ -1,0 +1,5 @@
+/* src/components/Logo/Logo.css */
+.logo-image {
+  height: 50px; /* Ajusta la altura según sea necesario */
+  width: auto;
+}

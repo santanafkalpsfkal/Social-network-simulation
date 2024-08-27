@@ -1,0 +1,7 @@
+/* Estilos para la vista previa de imágenes recortadas */
+.cropped-image-preview img {
+  width: 300px;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}

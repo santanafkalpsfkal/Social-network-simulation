@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el root ocupe al menos el 100% de la altura de la vista */
+}
+
+main {
+  flex: 1; /* Ocupa el espacio restante entre el header y el footer */
+  padding: 20px; /* Agrega un padding si es necesario */
+  overflow-y: auto; /* Permite el scroll vertical en el main */
+  -ms-overflow-style: none; /* Oculta las barras de desplazamiento en IE y Edge */
+  scrollbar-width: none; /* Oculta las barras de desplazamiento en Firefox */
+}
+
+main::-webkit-scrollbar {
+  width: 0; /* Oculta la barra de desplazamiento vertical */
+  height: 0; /* Oculta la barra de desplazamiento horizontal */
+}
+
+footer {
+  background-color: #1a1a1a; /* Fondo gris oscuro */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}

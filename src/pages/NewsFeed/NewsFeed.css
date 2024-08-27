@@ -1,0 +1,129 @@
+.newsfeed-container {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.post-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  gap: 20px;
+}
+
+.post-alert {
+  margin-top: 20px;
+}
+
+.posts-list {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  gap: 15px;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.skeleton-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #1d1c1c;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skeleton-loader .react-content-loader {
+  border-radius: 10px;
+}
+
+.cropped-image-preview img,
+.post-image img {
+  width: 300px;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.video-preview video,
+.post-video video,
+.audio-preview audio,
+.post-audio audio {
+  max-width: 300px;
+  height: auto;
+}
+/* Contenedor del overlay de recorte */
+.cropper-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+}
+
+/* Contenedor del contenido del recorte */
+.cropper-content {
+  background-color: #1d1c1c;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  width: 80%;
+  max-width: 800px; /* Ajusta según tu diseño */
+  box-sizing: border-box;
+}
+
+/* Contenedor para la imagen y el recorte */
+.cropper-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajusta la altura según el diseño deseado */
+  overflow: hidden;
+}
+
+/* Estilos para el componente Cropper */
+.cropper-container .reactEasyCrop_Cropper__cropper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos para los botones dentro del contenedor de recorte */
+.cropper-buttons {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+}
+
+.cropper-button {
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #28a745;
+}
+
+.cancel-button {
+  background-color: #1d1c1c;
+}
+
+.cancel-button:hover {
+  background-color: #363636;
+}

@@ -1,0 +1,40 @@
+/* src/components/Footer/Footer.css */
+footer {
+  background-color: #1a1a1a; /* Fondo gris oscuro */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%; /* Asegura que el footer ocupe todo el ancho */
+  box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Asegura que el contenido esté centrado verticalmente */
+}
+
+.footer-logo {
+  margin-bottom: 10px;
+}
+
+.footer-info {
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px; /* Espacio entre los íconos */
+  justify-content: center; /* Centra los íconos horizontalmente */
+}
+
+.social-icon {
+  color: #fff; /* Color blanco para los íconos */
+  font-size: 24px; /* Tamaño de los íconos */
+  text-decoration: none; /* Quitar subrayado en los enlaces */
+}
+
+.social-icon:hover {
+  color: #ccc; /* Cambia el color al pasar el mouse */
+}

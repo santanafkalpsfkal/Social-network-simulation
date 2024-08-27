@@ -1,0 +1,70 @@
+/* src/components/Header/Header.css */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1d1c1c; /* Menú de fondo oscuro */
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  margin-top: 70px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 30px; /* Espacio entre logo y enlaces */
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px; /* Espacio entre los enlaces */
+}
+
+.nav-links a {
+  color: #fff; /* Color de texto */
+  text-decoration: none;
+  font-size: 16px; /* Tamaño de fuente */
+  padding: 10px 15px; /* Padding para mejor espaciado */
+  background-color: #1d1c1c; /* Fondo gris oscuro */
+  border-radius: 35px; /* Bordes redondeados opcionales */
+  transition: background-color 0.3s; /* Transición suave para el cambio de fondo */
+}
+
+.nav-links a:hover {
+  background-color: #363636; /* Fondo gris claro en hover */
+  color: #fff; /* Color del texto permanece blanco */
+}
+
+.search-container {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff; /* Color de los iconos */
+}
+
+.icon:hover {
+  color: #fff; /* Color de los iconos sin cambios al pasar el cursor */
+}

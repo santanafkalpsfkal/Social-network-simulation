@@ -1,0 +1,44 @@
+/* Estilos para el cargador de contenido */
+.skeleton-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #1d1c1c;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Ajusta el tamaño máximo según el diseño */
+  margin: 0 auto; /* Centra el cargador horizontalmente */
+}
+
+/* Ajustes específicos para el contenido cargador */
+.skeleton-loader .react-content-loader {
+  border-radius: 10px;
+  width: 100%; /* Asegura que el contenido cargador ocupe el ancho del contenedor */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .skeleton-loader {
+      padding: 8px; /* Reduce el padding en pantallas más pequeñas */
+      gap: 8px; /* Ajusta el espacio entre elementos en pantallas más pequeñas */
+  }
+
+  .skeleton-loader .react-content-loader {
+      border-radius: 8px; /* Reduce el radio del borde en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .skeleton-loader {
+      padding: 6px; /* Reduce aún más el padding en pantallas muy pequeñas */
+      gap: 6px; /* Ajusta aún más el espacio entre elementos */
+  }
+
+  .skeleton-loader .react-content-loader {
+      border-radius: 6px; /* Reduce el radio del borde en pantallas muy pequeñas */
+  }
+}
